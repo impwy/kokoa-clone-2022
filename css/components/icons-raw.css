@@ -1,0 +1,19 @@
+.icons-raw {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.icons-raw__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons-raw__icons i {
+    font-size: 35px;
+}
+
+.icons-raw__icons span {
+    margin-top: 18px;
+}
