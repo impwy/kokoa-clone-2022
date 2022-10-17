@@ -2,14 +2,19 @@
     margin-top: 35px;
 }
 
+
 .more-suggestions {
-    margin-top:  50px;
-    border-top: var(--main-border);
-    padding-top: 40px;
+    display: flex;
+    flex-direction: block;
+    align-items: center;
 }
 
 .more-suggestions__title {
     margin-bottom: 30px;
+    margin-top: 50px;
+    border-top: var(--main-border);
+    padding-top: 40px;
+    font-weight: 600;
 }
 
 .more-suggestions__icons {

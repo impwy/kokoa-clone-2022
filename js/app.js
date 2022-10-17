@@ -1,20 +1,27 @@
 let chat = document.querySelector("#chat_link");
+let nav = document.querySelector(".nav__list");
+let badgeNum = nav.querySelector(".badge");
 
+const randomNum = Math.random()*50;
+const randomNum2 = Math.random()*50;
+const randomNumFloor = Math.floor(randomNum);
+const randomNumFloor2 = Math.floor(randomNum2);
 
 let chatsData = [{
     id: "one",
     name: "박원용",
     desc: "상태메세지를 입력하세요.",
     time: "22:12",
-    alret: "",
+    alret: `${randomNumFloor}`,
 },
 {
     id: "two",
     name: "박서연",
     desc: "상태메세지를 입력하세요.",
     time: "12:34",
-    alret: "",
+    alret: `${randomNumFloor}`,
 },]
+
 
 let chats = () => {
     return(chat.innerHTML = chatsData.map((x)=>{
@@ -35,7 +42,5 @@ let chats = () => {
         </div>`
     }).join(""));
     };
-    
-
-
 chats();
+badgeNum.innerText=`${randomNumFloor2}`;
